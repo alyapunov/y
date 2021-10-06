@@ -59,8 +59,8 @@ int main()
 	salary[0] += initial_bonus_rub;
 
 	// review bonus
-	for (size_t i = 6; i < num_months; i += 6)
-		salary[i] += default_wage_rub * 0.8;
+	for (size_t i = 5; i < num_months; i += 6)
+		salary[i] += default_wage_rub * 0.9;
 
 	// initial grant
 	salary[11] += initial_grant_usd / 4 * usd_rate;
