@@ -63,12 +63,12 @@ int main()
 		salary[i] += default_wage_rub * 0.8;
 
 	// initial grant
-	salary[12] += initial_grant_usd / 4 * usd_rate;
-	for (size_t i = 1; i <= 12 && 12 + i * 3 < num_months; i++)
-		salary[12 + i * 3] += initial_grant_usd / 16 * usd_rate;
+	salary[11] += initial_grant_usd / 4 * usd_rate;
+	for (size_t i = 1; i <= 12 && 11 + i * 3 < num_months; i++)
+		salary[11 + i * 3] += initial_grant_usd / 16 * usd_rate;
 
 	// review grant
-	for (size_t i = 6; i < num_months; i += 6)
+	for (size_t i = 5; i < num_months; i += 6)
 		for (size_t j = 1; j <= 16 && i + 3 * j < num_months; j++)
 			salary[i + 3 * j] += usual_grant_usd / 16 * usd_rate;
 
